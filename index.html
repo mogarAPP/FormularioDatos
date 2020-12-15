@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+   <title>Programa en GitHub</title>
+</head>
+<body>
+  <h1> DATOS </h1>
+  <p>
+    <label for="Nombre">Nombre: </label>
+    <input type="text" id="nombre" required placeholder="Nombre">
+    <output id="SalidaNombre"></output>
+  </p>
+  
+  <p>
+    <label for="Boleta">Boleta: </label>
+    <input type="text" id="boleta" required placeholder="Boleta">
+    <output id="SalidaBoleta"></output>
+  </p>
+  
+  <p>
+    <label for="Grupo">Grupo: </label>
+    <input type="text" id="grupo" required placeholder="Grupo">
+    <output id="SalidaGrupo"></output>
+  </p>
+  
+  <p>
+    <label for="Materia">Materia: </label>
+    <input type="text" id="materia" required placeholder="Materia">
+    <output id="SalidaMateria"></output>
+  </p>
+  
+  <p>
+    <label for="Fecha">Fecha: </label>
+    <input type="date" name="Fecha" id="Fecha" required>
+    <output id="SalidaFecha"></output>
+  </p>
+    <script type="text/javascript">
+    function PROCESA() { 
+    var nombre = document.getElementById("nombre")
+    var OutNombre = document.getElementById("SalidaNombre")
+    OutNombre.textContent = nombre.value;
+    
+    var boleta = document.getElementById("boleta")
+    var OutBoleta = document.getElementById("SalidaBoleta")
+    OutBoleta.textContent = boleta.value;
+    
+    var grupo = document.getElementById("grupo")
+    var OutGrupo = document.getElementById("SalidaGrupo")
+    OutGrupo.textContent = grupo.value;
+    
+    var materia = document.getElementById("materia")
+    var OutMateria = document.getElementById("SalidaMateria")
+    OutMateria.textContent = materia.value;
+    
+    var fecha = document.getElementById("Fecha")
+    var OutFecha = document.getElementById("SalidaFecha")
+    OutFecha.textContent = fecha.value;
+    }
+</script>
+  <p><button id="btnProcesar" name="BOTON" onclick="PROCESA()">PROCESAR</button></p>
+  <p><output id="SalidaDatos" name="salida"></output></p>
+  <footer> Copy Right &copy; 2020 Moedano García Jésica Alejandra</footer>
+  
+
+</body>
+</html>
